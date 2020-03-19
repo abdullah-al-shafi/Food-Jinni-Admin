@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AddFood">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:includeFontPadding="true"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/write_text_5"
+                >
+
+                <TextView
+                    android:visibility="gone"
+                    android:padding="1dp"
+                    android:id="@+id/catagori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <Spinner
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="1dp"
+                    android:id="@+id/select_cata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/food_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center"
+                android:hint="Food Id Number"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:padding="1dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/food_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center"
+                android:hint="Food Name"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:padding="1dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:minLines="6"
+                android:maxLines="10"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/food_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="start"
+                android:hint="Food Description/quantity"
+                android:padding="1dp"
+                android:includeFontPadding="true"
+                android:inputType="textMultiLine"
+                />
+
+            <EditText
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/food_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko_semibold"
+                android:gravity="center"
+                android:hint="Price"
+                android:includeFontPadding="true"
+                android:inputType="numberDecimal"
+                android:padding="1dp"
+                android:singleLine="true" />
+
+
+            <LinearLayout
+                android:layout_marginBottom="64dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:visibility="gone"
+                    android:padding="18dp"
+                    android:layout_marginRight="24dp"
+                    android:id="@+id/delet_food"
+                    android:onClick="deletefood"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"/>
+
+                <Button
+                    android:layout_marginLeft="24dp"
+                    android:id="@+id/add_food"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:text="Add Food"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

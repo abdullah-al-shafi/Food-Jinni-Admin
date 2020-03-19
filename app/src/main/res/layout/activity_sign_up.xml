@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration.SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    app:srcCompat="@drawable/food_jinni"
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Register your Restaurant"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:background="@drawable/add_restau"
+                        android:id="@+id/addimagebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <EditText
+                        android:id="@+id/restaurant_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="Restaurant Name"
+                        android:includeFontPadding="true"
+                        android:inputType="text"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                    <EditText
+                        android:id="@+id/registerNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="Registration number"
+                        android:includeFontPadding="true"
+                        android:inputType="number"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                    <EditText
+                        android:id="@+id/ra_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="Restaurant Type"
+                        android:includeFontPadding="true"
+                        android:inputType="text"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/phone_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="Phone number"
+                        android:includeFontPadding="true"
+                        android:inputType="phone"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="password"
+                        android:inputType="textPassword"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                    <EditText
+                        android:id="@+id/re_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/write_text_5"
+                        android:fontFamily="@font/amiko_semibold"
+                        android:gravity="center"
+                        android:hint="enter password again"
+                        android:inputType="textPassword"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMain" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="50dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/foreign_doctor_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="10dp"
+                        app:contentPadding="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_margin="2dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="left"
+                                app:srcCompat="@drawable/sent_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                            <View
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMain"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/amiko_semibold"
+                                android:gravity="center"
+                                android:text="Sign Up"
+                                android:textColor="@color/colorMain"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:typeface="monospace" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
